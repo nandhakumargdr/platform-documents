@@ -5,6 +5,11 @@
 dotnet new webapi -n project-name
 ```
 
+Create release file
+```sh
+$ dotnet publish -c release -o app/
+```
+
 **Step 2:** Create ___dockerfile___ and ___.dockerignore___
 Paste the belo code in ___dockerfile___
 
@@ -24,7 +29,6 @@ bin\
 **Step 2:** Build and create docker image
 
 ```sh
-$ dotnet publish -c release -o app/
 $ docker build -t project-name .
 ```
 
