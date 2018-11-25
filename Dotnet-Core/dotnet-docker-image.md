@@ -2,10 +2,10 @@
 
 **Step 1:** Create a .Net Core Project (WebApi)
 ```sh
-dotnet new webapi -n project-name
+$ dotnet new webapi -n project-name
 ```
 
-Create release file
+Create release files
 ```sh
 $ dotnet publish -c release -o app/
 ```
@@ -26,13 +26,13 @@ obj\
 bin\
 ```
 
-**Step 2:** Build and create docker image
+**Step 3:** Build and create docker image
 
 ```sh
 $ docker build -t project-name .
 ```
 
-**Step 3:** Running docker Image
+**Step 4:** Running docker Image
 ```sh
 $ docker run -p 5000:80 project-name
 ```
