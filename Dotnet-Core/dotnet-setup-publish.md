@@ -170,6 +170,7 @@ $ dotnet ef database update
  ```sh
  $ sudo a2enmod proxy
  $ sudo a2enmod proxy_http
+ $ sudo a2enmod headers
  ```
  4) Creating service to configure the dotnet core to run as Deamon
     create kestral-yourappname.service in "/etc/systemd/system" folder and paste the below line
