@@ -29,7 +29,11 @@ $ sudo a2dissite 000-default.conf
 ```sh
 $ sudo a2ensite domain.com.conf
 ```
-4.Restart apacahe2 server
+4.List site configs
+```sh
+$ sudo a2query -s
+```
+5.Restart apacahe2 server
 ```sh
 $ sudo service apache2 restart
 or
