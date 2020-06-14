@@ -1,11 +1,13 @@
 # Git Deployment Guide
-#### iOS
 
 #####To Initialize git repository
 ```sh
 $ git init
 $ git add .
 $ git add remote origin https://repository_link.git
+$ git clone https://username@github.com/username(or)orgname/reponame.git
+
+$ git remote add origin https://username@github.com/username(or)orgname/reponame.git
 ```
 
 ##### To Commit git repository
