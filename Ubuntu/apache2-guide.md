@@ -84,4 +84,31 @@ $ sudo /etc/init.d/apache2 restart
 </VirtualHost>
 ```
 
+
+### To forward a domain to port
+1. Create a config file /etc/apache2/sites-available/config-name.config
+```
+<VirtualHost *:80>
+    ServerAdmin me@mydomain.com
+    ServerName subdomain.mydomain.com
+    ProxyPreserveHost On
+
+    # setup the proxy
+    <Proxy *>
+        Order allow,deny
+        Allow from all
+    </Proxy>
+    ProxyPass / http://localhost:8888/
+    ProxyPassReverse / http://localhost:8888/
+</VirtualHost>
+```
+2. Enable the config 
+```
+$ sudo a2ensite config-name.config
+```
+3. Restart apache2 server
+```
+$ sudo systemctl restart apache2
+```
+
 Reference: https://httpd.apache.org/docs/2.4/vhosts/examples.html
