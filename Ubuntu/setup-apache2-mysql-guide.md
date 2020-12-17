@@ -12,6 +12,8 @@ $ sudo apt-get install apache2
 ```sh
 $ sudo apt-get install mysql-server
 ```
+#### To uninstall mysql-server
+https://linuxscriptshub.com/uninstall-completely-remove-mysql-ubuntu-16-04/
 #### To install phpMyAdmin (MySql-Client)
 ```sh
 $ sudo apt-get install phpmyadmin
