@@ -12,3 +12,11 @@ Issue the following command to stop and start Uncomplicated Firewall (UFW).
 > sudo ufw disable 
 
 > sudo ufw enable
+
+## Find process
+
+> sudo lsof -i -P -n
+
+> sudo lsof -i -P -n | grep LISTEN
+
+> sudo ps -Flww -p 827
