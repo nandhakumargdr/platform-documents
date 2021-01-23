@@ -2,6 +2,8 @@
 
 ### Dotnet Core Webapi
 
+Refer this link for linux httpd - https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-5.0
+
 #### Step 1: To initialize a project
 
 ```sh
